@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hexagon Button Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Time selection dropdown -->
+    <div id="time-selection">
+        <label for="time-select">Select Time Trial Duration:</label>
+        <select id="time-select">
+            <option value="10">10 seconds</option>
+            <option value="30">30 seconds</option>
+            <option value="60">1 minute</option>
+            <option value="300">5 minutes</option>
+            <option value="86400">24 hour marathon</option>
+        </select>
+        <button id="play-button">Play</button>
+    </div>
+
+    <div id="game-container" style="display: none;"></div>
+    <p id="prompt"></p>
+    <p id="report"></p>
+    <p id="stats"></p>
+
+    <script src="frontEnd.js"></script>
+</body>
+</html>

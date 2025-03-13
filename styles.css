@@ -1,0 +1,122 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+#game-container {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: 0px auto;
+}
+
+.hex-button {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(10, 116, 152);
+    border: rgb(0, 39, 79);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#start-button {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.hexagon {
+    position: absolute;
+    width: 500px;
+    height: 577px; /* Adjusted height to maintain hexagonal proportions */
+    background-color: lightgray; /* Filled hexagon with solid color */
+    clip-path: polygon(75% 8%, 100% 100%, 100% 100%, 100% 100%, 97% 100%);
+    top: 80px;
+    left: 125px;
+}
+
+.correct {
+    background-color: green !important;
+}
+
+.incorrect {
+    background-color: red !important;
+}
+
+#time-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#time-select {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+}
+
+#play-button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display:inherit
+}
+
+#play-button:hover {
+    background-color: #0056b3;
+}
+
+#prompt {
+    font-size: 24px;
+    font-weight: bold;
+    color: #001d42; /* Red color for emphasis */
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #a7bcd8;
+    border: none;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+#report {
+    font-size: 24px;
+    font-weight: bold;
+    color: #001d42; /* Red color for emphasis */
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #a7bcd8;
+    border: none;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+#stats {
+    font-size: 18px;
+    font-weight: bold;
+    color: #001d42; /* Red color for emphasis */
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #a7bcd8;
+    border: none;
+    border-radius: 8px;
+    display: inline-block;
+}
